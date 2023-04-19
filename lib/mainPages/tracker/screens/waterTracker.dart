@@ -10,7 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wave/config.dart';
 import 'package:wave/wave.dart';
 
-import '../../core/ColorConstants.dart';
+import '../../../core/ColorConstants.dart';
 
 class WaterTracker extends StatefulWidget {
   @override
