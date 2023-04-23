@@ -1,3 +1,4 @@
+import 'package:fitness_app/mainPages/tracker/screens/caloriesTracker.dart';
 import 'package:fitness_app/mainPages/tracker/screens/waterTracker.dart';
 import 'package:flutter/material.dart';
 
@@ -92,10 +93,18 @@ class ToTrackerButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => WaterTracker()),
-        );
+        if(_name == "Wassertracker"){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => WaterTracker()),
+          );
+        } else {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => CaloriesTracker()),
+          );
+        }
+
       },
       child: Container(
         height: 150,

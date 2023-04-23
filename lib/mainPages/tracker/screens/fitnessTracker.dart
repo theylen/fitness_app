@@ -73,7 +73,7 @@ class _FitnessTrackerState extends State<FitnessTracker> {
             body: Stack(
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.4, left: MediaQuery.of(context).size.width*0.2, right:MediaQuery.of(context).size.width*0.2 ),
+                  margin: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.32, left: MediaQuery.of(context).size.width*0.2, right:MediaQuery.of(context).size.width*0.2 ),
                   child: ListView.builder(
                     padding: EdgeInsets.all(20),
                     itemCount: value.getWorkoutList().length,
@@ -97,7 +97,7 @@ class _FitnessTrackerState extends State<FitnessTracker> {
                       ),
                       //endActionPane: ,
                       child: ListTile(
-                        tileColor: Colors.black54,
+                        tileColor: Colors.white54,
                         onTap: () =>
                             goToWorkoutPage(value.getWorkoutList()[index].name),
                         visualDensity: VisualDensity(vertical: 3),
@@ -114,10 +114,11 @@ class _FitnessTrackerState extends State<FitnessTracker> {
                   ),
                 ),
                 Container(
-                  height: MediaQuery.of(context).size.height*0.4,
+                  height: MediaQuery.of(context).size.height*0.3,
                   width: MediaQuery.of(context).size.width,
                   color: Colors.black,
                 ),
+
                 Container(
                     margin: EdgeInsets.only(left: 50, top: 52),
                     child: Text(
@@ -127,6 +128,7 @@ class _FitnessTrackerState extends State<FitnessTracker> {
                       fontWeight: FontWeight.bold,
                       color: Colors.white70),
                 )),
+
               ],
             )),
       ),
